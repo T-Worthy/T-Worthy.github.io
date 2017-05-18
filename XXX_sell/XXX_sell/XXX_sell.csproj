@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C70ABBC4-EC07-4EDB-9135-80E3D2804E93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XXX_sell</RootNamespace>
+    <AssemblyName>XXX_sell</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin4">
+      <HintPath>..\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCommodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCommodity.Designer.cs">
+      <DependentUpon>FormCommodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManager2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManager2.Designer.cs">
+      <DependentUpon>FormManager2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SELL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELL.Designer.cs">
+      <DependentUpon>SELL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperManager.Designer.cs">
+      <DependentUpon>SuperManager.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCommodity.resx">
+      <DependentUpon>FormCommodity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManager2.resx">
+      <DependentUpon>FormManager2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SELL.resx">
+      <DependentUpon>SELL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperManager.resx">
+      <DependentUpon>SuperManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.octet-stream" />
+    <None Include="Resources\1dcce46d92821c123ba430e2bb645445.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3c28af542f2d49f7-44af7693092324ab-edabc8b284469208ff4f4917cded2c36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c989bf8cff2a0130cbe81af609e13efa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3939013B5DEF4824B6AF2DB9447C4C7E.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psb2NZYCZ05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac75323d6b6de243-6f95e32275e1e6d6-4cd975ceabd39b6a0a4944f4b4c62039.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ac75323d6b6de243-6f95e32275e1e6d6-4cd975ceabd39b6a0a4944f4b4c620391.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4eb507341e0c99da-b1ba2743a36c0b45-1b26c585ee0d9da09d89226ed8cad943.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thKBWQ27WM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th2TBV42OS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3c28af542f2d49f7-da1566425074a021-3653465a8d375b63a57aaaa44bf3db51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5cfc73a05407de00-e95930cc9cacb570-027c56a94133397dd73a36b3ed4872c7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca86e620b9e623ff-d1c9f350507d226e-7392394e704c0123cee206426b31ba20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1a3d496ea49bb150-0ab91eb34a731317-2c9f3c67746766b96269bc7e0822945e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea834ebbc9c8dae4-ea7fa0d8af0943e5-f11bd704746bca6c1c5931c5240bf1b8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d7036c9a17f5fda2-ec8e047b4bd56cbf-eed6b6c8efbf4d0cbc3f6acd2e1bfcfb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f13ca4be157d8983-b9e0c1d9d6b828ce-f6091d936165d0642637cc4480ef9617.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f13ca4be157d8983-b9e0c1d9d6b828ce-d75941af34230a408081f78da9ab7423.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1a0574f0a66e920c-03a9e98a58ddcf91-edb51dfcb91615e6b85761a7efc4c445.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
